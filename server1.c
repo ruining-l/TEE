@@ -256,6 +256,7 @@ int client_main() {
     unsigned char key3[32]; // AES-XTS 密钥
     unsigned char GEN_CBUFFER[128]; // 客户端解密后的数据
     unsigned char TEE_CBUFFER[128]; // 客户端加密后的数据
+    unsigned char GEN_BUFFER[128]; 
     unsigned char auth_tag[16]; // 认证标签
 
     // 填充密钥
